@@ -275,3 +275,9 @@ clojure
 ```
 
 - 참조 이미지 구문 : 이미지 참조는 링크 참조와 동일한 구문을 사용하여 정의
+
+## 출처
+
+- [나무위키 - 마크다운](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
+- [Daring Fireball - Markdown](https://daringfireball.net/projects/markdown/)
+- [Gist - Markdown Guide](https://gist.github.com/ihoneymon/652be052a0727ad59601)
