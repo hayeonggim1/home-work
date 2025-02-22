@@ -1,1 +1,58 @@
+@import "/src/common/modern-reset.css";
 
+.avatar {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.avatars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 0;
+  margin: 20px;
+  background-color: #ffffff;
+
+  .woman {
+    margin-bottom: 20px;
+  }
+
+  .man {
+    margin-top: 0;
+  }
+}
+
+.nonactive {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #dbdbdb;
+  width: 17.778px;
+  height: 17.778px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.active {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #4cfe88;
+  width: 17.778px;
+  height: 17.778px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
