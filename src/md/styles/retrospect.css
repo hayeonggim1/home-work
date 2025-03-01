@@ -1,0 +1,28 @@
+@import "/src/common/modern-reset.css";
+@import "/src/common/theme.ss";
+
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+ul {
+  margin-top: 10px;
+
+  li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(99, 97, 108);
+
+    &:hover {
+      color: var(--pastel-aqua);
+    }
+  }
+}

@@ -1,0 +1,110 @@
+/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+
+@import "/src/common/modern-reset.css";
+
+:root {
+  --font-10: 14px;
+  --primary: #03cf5d;
+
+  --gray-10: #dadada;
+  --gray-20: #999999;
+  --white: #ffffff;
+}
+
+body {
+  font-size: var(--font-10);
+}
+
+.login-form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+
+  .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .id {
+    margin-bottom: 10px;
+  }
+
+  .pw {
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 290px;
+    height: 48px;
+    background: var(--primary);
+    border: 0;
+    color: var(--white);
+  }
+
+  input {
+    width: 100vw;
+    height: 48px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid var(--primary);
+    }
+  }
+}
+
+.state-container {
+  width: 290px;
+
+  input {
+    width: 24.004px;
+    height: 24.004px;
+  }
+
+  .keep-check {
+    display: inline-block;
+    float: right;
+  }
+}
+
+.logo {
+  margin-top: 70px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo a {
+    display: inline-block;
+    width: fit-content;
+  }
+  .logo a svg {
+    width: 230px;
+  }
+}
+
+form {
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+}
