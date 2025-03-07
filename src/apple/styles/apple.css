@@ -1,0 +1,6 @@
+@import "./card-component.css";
+
+/* 카드 레이아웃 */
+.item {
+  margin-top: var(--large-spacing);
+}
