@@ -65,15 +65,6 @@ nav {
           opacity: 50%;
         }
       }
-
-      @media (min-width: 1024px) {
-        gap: var(--large-spacing);
-        margin-right: var(--large-spacing);
-        a,
-        svg {
-          height: var(--extra-large-spacing);
-        }
-      }
     }
   }
 
@@ -90,6 +81,21 @@ nav {
       height: var(--extra-large-spacing);
       padding-right: var(--large-spacing);
       padding-left: var(--large-spacing);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    height: var(--extra-large-spacing);
+
+    ul {
+      .bar-right {
+        gap: var(--large-spacing);
+        margin-right: var(--large-spacing);
+        a,
+        svg {
+          height: var(--extra-large-spacing);
+        }
+      }
     }
   }
 }
