@@ -1,6 +1,95 @@
 @import "./card-component.css";
 
 /* 카드 레이아웃 */
-.item {
+.container {
   margin-top: var(--large-spacing);
+  margin-bottom: var(--large-spacing);
+  @media (min-width: 1024px) {
+    margin-top: var(--extra-large-spacing);
+  }
+}
+
+.list {
+  display: grid;
+  grid-column: 1/2;
+  row-gap: var(--base-spacing);
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--base-spacing);
+
+    .ipadpro,
+    .ipadair,
+    .iphone-pro {
+      grid-column: 1/3;
+    }
+  }
+}
+
+/* navigation */
+nav {
+  z-index: 1000;
+  background-color: rgb(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--large-spacing);
+  width: 100vw;
+  backdrop-filter: blur(10px);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    .main {
+      svg {
+        &:hover {
+          transform: scale(110%);
+          opacity: 50%;
+        }
+      }
+    }
+
+    .bar-right {
+      display: flex;
+      gap: var(--base-spacing);
+      margin-right: var(--base-spacing);
+      a,
+      svg {
+        height: var(--large-spacing);
+      }
+
+      svg {
+        &:hover {
+          transform: scale(110%);
+          opacity: 50%;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        gap: var(--large-spacing);
+        margin-right: var(--large-spacing);
+        a,
+        svg {
+          height: var(--extra-large-spacing);
+        }
+      }
+    }
+  }
+
+  .apple-48 {
+    display: block;
+    width: 100%;
+    height: var(--large-spacing);
+    padding-right: var(--base-spacing);
+    padding-left: var(--base-spacing);
+  }
+
+  @media (min-width: 1024px) {
+    .apple-48 {
+      height: var(--extra-large-spacing);
+      padding-right: var(--large-spacing);
+      padding-left: var(--large-spacing);
+    }
+  }
 }

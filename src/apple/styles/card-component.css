@@ -3,65 +3,265 @@
 @import "./base.css";
 
 .item {
+  display: grid;
   height: var(--size);
-  background-color: var(--gray);
+
+  .link {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: 1;
+  }
+
+  .card {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    align-self: start;
+  }
 
   .subject {
     font-size: var(--large-text);
-    font-weight: 600;
+    font-weight: 700;
+    z-index: 2;
   }
-  .content {
+
+  .subtitle {
     font-size: var(--base-text);
+    font-weight: 400;
     display: flex;
     flex-flow: column;
+    z-index: 2;
+    gap: var(--line-normal);
+
     span {
+      display: flex;
       place-self: center;
     }
   }
+
   .date {
     font-size: var(--small-text);
     color: var(--gray);
+    z-index: 2;
   }
+
   .button-list {
     display: flex;
     align-items: baseline;
-    gap: var(--x-small-spacing);
+    gap: var(--small-spacing);
     font-size: var(--xx-small-text);
+    z-index: 2;
+
     > * {
       padding: var(--x-small-spacing);
       border-radius: 100px;
     }
   }
+
   .blue {
     .more {
+      border: 1.5px solid var(--blue-300);
       background: var(--blue-300);
       color: var(--white);
+      &:hover {
+        background: var(--blue-100);
+        border: 1.5px solid var(--blue-100);
+        transform: scale(105%);
+      }
     }
+
     .price {
-      border: 2px solid var(--blue-300);
+      border: 1.5px solid var(--blue-300);
       color: var(--blue-300);
+
+      &:hover {
+        background: var(--blue-300);
+        color: var(--white);
+        transform: scale(105%);
+      }
     }
   }
+
   .black {
     .more {
+      border: 1.5px solid var(--black);
       background: var(--black);
       color: var(--white);
+      &:hover {
+        border: 1.5px solid var(--gray);
+        background: var(--gray);
+        transform: scale(105%);
+      }
     }
+
     .price {
-      border: 2px solid var(--black);
+      border: 1.5px solid var(--black);
       color: var(--black);
+
+      &:hover {
+        background: var(--black);
+        color: var(--white);
+        transform: scale(105%);
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .subject {
+      font-size: var(--extra-large-text);
+    }
+    .subtitle {
+      font-size: var(--medium-text);
+    }
+    .button-list {
+      font-size: var(--x-small-text);
     }
   }
 }
 
 .card {
   > * {
-    margin-bottom: var(--x-small-spacing);
     place-self: center;
   }
 
   display: grid;
+  row-gap: var(--small-spacing);
   place-content: center;
-  background-color: yellow;
+  /* background-color: yellow; */
   padding-top: var(--large-spacing);
+}
+
+.list {
+  .ipadpro {
+    background: url("/src/apple/products/ipad_pro.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 1024px 미만 & 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/ipad_pro_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 1024px 이상 & 1배율 */
+    @media (min-width: 1024px) and (max-resolution: 1dppx) {
+      background: url("/src/apple/products/ipad_pro_wide.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 1024px 이상 & 2배율 이상 */
+    @media (min-width: 1024px) and (min-resolution: 2dppx) {
+      background: url("/src/apple/products/ipad_pro_wide_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .ipadair {
+    background: url("/src/apple/products/ipad_air.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 1024px 미만 & 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/ipad_air_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 1024px 이상 & 1배율 */
+    @media (min-width: 1024px) and (max-resolution: 1dppx) {
+      background: url("/src/apple/products/ipad_air_wide.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 1024px 이상 & 2배율 이상 */
+    @media (min-width: 1024px) and (min-resolution: 2dppx) {
+      background: url("/src/apple/products/ipad_air_wide_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .iphone-pro {
+    background: url("/src/apple/products/iphone15_pro.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 1024px 미만 & 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/iphone15_pro_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 1024px 이상 & 1배율 */
+    @media (min-width: 1024px) and (max-resolution: 1dppx) {
+      background: url("/src/apple/products/iphone15_pro_wide.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* 1024px 이상 & 2배율 이상 */
+    @media (min-width: 1024px) and (min-resolution: 2dppx) {
+      background: url("/src/apple/products/iphone15_pro_wide_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .iphone {
+    background: url("/src/apple/products/iphone15.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/iphone15_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .watch {
+    background: url("/src/apple/products/apple_watch.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/apple_watch_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .macbook {
+    background: url("/src/apple/products/macbook_air.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/macbook_air_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .airpods {
+    background: url("/src/apple/products/airpods_pro.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 2배율 이상 */
+    @media (min-resolution: 2dppx) {
+      background: url("/src/apple/products/airpods_pro_2x.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.white-t {
+  .subject,
+  .subtitle {
+    color: var(--white);
+  }
 }
