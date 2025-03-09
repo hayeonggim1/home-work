@@ -132,127 +132,127 @@
 
 .list {
   .ipadpro {
-    background: url("/src/apple/products/ipad_pro.jpeg") no-repeat;
+    background: url("../products/ipad_pro.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 1024px 미만 & 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/ipad_pro_2x.jpeg") no-repeat;
+      background: url("../products/ipad_pro_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     /* 1024px 이상 & 1배율 */
     @media (min-width: 1024px) and (max-resolution: 1dppx) {
-      background: url("/src/apple/products/ipad_pro_wide.jpeg") no-repeat;
+      background: url("../products/ipad_pro_wide.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     /* 1024px 이상 & 2배율 이상 */
     @media (min-width: 1024px) and (min-resolution: 2dppx) {
-      background: url("/src/apple/products/ipad_pro_wide_2x.jpeg") no-repeat;
+      background: url("../products/ipad_pro_wide_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
   .ipadair {
-    background: url("/src/apple/products/ipad_air.jpeg") no-repeat;
+    background: url("../products/ipad_air.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 1024px 미만 & 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/ipad_air_2x.jpeg") no-repeat;
+      background: url("../products/ipad_air_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     /* 1024px 이상 & 1배율 */
     @media (min-width: 1024px) and (max-resolution: 1dppx) {
-      background: url("/src/apple/products/ipad_air_wide.jpeg") no-repeat;
+      background: url("../products/ipad_air_wide.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     /* 1024px 이상 & 2배율 이상 */
     @media (min-width: 1024px) and (min-resolution: 2dppx) {
-      background: url("/src/apple/products/ipad_air_wide_2x.jpeg") no-repeat;
+      background: url("../products/ipad_air_wide_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
   .iphone-pro {
-    background: url("/src/apple/products/iphone15_pro.jpeg") no-repeat;
+    background: url("../products/iphone15_pro.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 1024px 미만 & 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/iphone15_pro_2x.jpeg") no-repeat;
+      background: url("../products/iphone15_pro_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     /* 1024px 이상 & 1배율 */
     @media (min-width: 1024px) and (max-resolution: 1dppx) {
-      background: url("/src/apple/products/iphone15_pro_wide.jpeg") no-repeat;
+      background: url("../products/iphone15_pro_wide.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     /* 1024px 이상 & 2배율 이상 */
     @media (min-width: 1024px) and (min-resolution: 2dppx) {
-      background: url("/src/apple/products/iphone15_pro_wide_2x.jpeg") no-repeat;
+      background: url("../products/iphone15_pro_wide_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
   .iphone {
-    background: url("/src/apple/products/iphone15.jpeg") no-repeat;
+    background: url("../products/iphone15.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/iphone15_2x.jpeg") no-repeat;
+      background: url("../products/iphone15_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
   .watch {
-    background: url("/src/apple/products/apple_watch.jpeg") no-repeat;
+    background: url("../products/apple_watch.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/apple_watch_2x.jpeg") no-repeat;
+      background: url("../products/apple_watch_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
   .macbook {
-    background: url("/src/apple/products/macbook_air.jpeg") no-repeat;
+    background: url("../products/macbook_air.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/macbook_air_2x.jpeg") no-repeat;
+      background: url("../products/macbook_air_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
   .airpods {
-    background: url("/src/apple/products/airpods_pro.jpeg") no-repeat;
+    background: url("../products/airpods_pro.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
 
     /* 2배율 이상 */
     @media (min-resolution: 2dppx) {
-      background: url("/src/apple/products/airpods_pro_2x.jpeg") no-repeat;
+      background: url("../products/airpods_pro_2x.jpeg") no-repeat;
       background-size: cover;
       background-position: center;
     }
