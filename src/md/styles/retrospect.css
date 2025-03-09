@@ -29,7 +29,7 @@ ul {
     height: 15px;
     display: inline-block;
     margin-right: 8px;
-    background-image: url("/src/assets/images/plant.png");
+    background-image: url("../../assets/images/plant.png");
   }
 
   a {
